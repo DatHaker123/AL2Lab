@@ -39,6 +39,7 @@
         <div class="flex flex-col gap-2">
           <div class="flex gap-2 items-center">
             {#each Object.entries(resources[item].items) as [subitem, count]}
+            <p>{count}&nbsp&nbsp</p>
             <img class="h-5" src={'/assets/RESOURCES_' + subitem.toUpperCase() + '.png'} alt={subitem} />
             {/each}
             <ChevronRight />
